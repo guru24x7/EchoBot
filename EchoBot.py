@@ -56,7 +56,7 @@ if __name__ == '__main__':
     xmpp.register_plugin('xep_0060') # PubSub
     xmpp.register_plugin('xep_0199') # XMPP Ping
 
-    if xmpp.connect(('192.168.126.128', 5222)):
+    if xmpp.connect(('192.168.30.128', 5222)):
         xmpp.process(block=True)
     else:
         print('Unable to connect')
